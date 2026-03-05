@@ -1,5 +1,5 @@
 const gloton = document.getElementById('gloton')
-const points = document.getElementById('points')
+const points = getElementById('points')
 
 const btnSubirNivel = document.getElementById('btn-subir-nivel')
 btnSubirNivel.style.display = 'none'
@@ -10,7 +10,7 @@ let nivel = 1
 
 function alimentar() {
     if (conteoPuntos < puntosNeeded) {
-        conteoPuntos++
+        conteoPuntos+
         points.innerText = conteoPuntos
         btnSubirNivel.style.display = 'none'
     } else {
@@ -24,7 +24,7 @@ function subirNivel() {
     points.innerText = conteoPuntos
     gloton.style.fontSize = `calc(3rem + ${conteoPuntos}rem)`
     btnSubirNivel.style.display = 'none'
-    puntosNeeded += 10
+    puntosNeeded = 10
 }
 
 
