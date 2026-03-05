@@ -1,5 +1,5 @@
 const gloton = document.getElementById('gloton')
-const points = getElementById('points')
+const points = document.getElementById('points')
 
 const btnSubirNivel = document.getElementById('btn-subir-nivel')
 btnSubirNivel.style.display = 'none'
@@ -12,7 +12,7 @@ function alimentar() {
     if (conteoPuntos < puntosNeeded) {
         conteoPuntos+
         points.innerText = conteoPuntos
-        btnSubirNivel.style.display = 'none'
+        btnSubirNivel.Style.display = 'none'
     } else {
         btnSubirNivel.style.display = 'block'
         gloton.classList.remove('ri-emotion-unhappy-fill')
